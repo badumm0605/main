@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Инструкция</title>
+    <link href="file:///android_asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="file:///android_asset/fwa/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .back-btn { cursor: pointer; color: #0d6efd; text-decoration: none; font-weight: bold; }
+        .help-section { background: #fff; border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .icon-box { width: 40px; height: 40px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-right: 15px; }
+        .bg-blue-light { background: #e7f1ff; color: #0d6efd; }
+        .bg-green-light { background: #e8f5e9; color: #198754; }
+        .bg-orange-light { background: #fff3cd; color: #fd7e14; }
+        .bg-purple-light { background: #f3e8ff; color: #6f42c1; }
+    </style>
+</head>
+<body class="pb-5">
+
+<div class="sticky-top bg-white border-bottom shadow-sm p-3 mb-4">
+    <div class="d-flex align-items-center">
+        <a href="javascript:history.back()" class="back-btn me-3 fs-5"><i class="fa-solid fa-arrow-left"></i></a>
+        <h5 class="mb-0 fw-bold">Как это работает?</h5>
+    </div>
+</div>
+
+<div class="container">
+    
+    <div class="text-center mb-4">
+        <i class="fa-solid fa-book-open fs-1 text-primary mb-2"></i>
+        <h2 class="fw-bold text-dark">Руководство пользователя</h2>
+        <p class="text-muted small">Подробное описание функций и возможностей.</p>
+    </div>
+<div class="help-section">
+        <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-blue-light"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h5 class="fw-bold mb-0">Управление заявками</h5>
+        </div>
+        <p class="text-muted small lh-sm">Вкладка карточек позволяет вести учет всех выездов. У каждого заказа есть свой жизненный цикл:</p>
+        <ul class="text-muted small ps-3">
+            <li class="mb-1"><b>В работе:</b> Новая заявка или клиент "думает".</li>
+            <li class="mb-1 text-success"><b>Выполнен:</b> Ремонт завершен, деньги получены. Формирует средний чек.</li>
+            <li class="mb-1 text-warning"><b>Отказ:</b> Выезд состоялся, но от ремонта отказались (платный/бесплатный отказ).</li>
+            <li class="mb-1 text-danger"><b>Отмена:</b> Заявка отменилась до выезда. Ухудшает конверсию.</li>
+            <li class="mb-1 text-info"><b>Гарантия:</b> Повторный выезд. Не считается новой заявкой в аналитике, чтобы не портить статистику.</li>
+        </ul>
+    </div>
+
+    <div class="help-section">
+        <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-green-light"><i class="fa-solid fa-chart-pie"></i></div>
+            <h5 class="fw-bold mb-0">Модуль "Аналитика"</h5>
+        </div>
+        <p class="text-muted small lh-sm">Нажмите на значок <i class="fa-solid fa-chart-pie"></i> в верхней панели, чтобы увидеть реальную картину бизнеса. Аналитика автоматически высчитывает:</p>
+        <ul class="text-muted small ps-3">
+            <li class="mb-1"><b>Оборот и Прибыль:</b> Грязные деньги минус стоимость запчастей.</li>
+            <li class="mb-1"><b>Средний чек:</b> Вся чистая прибыль, разделенная на количество закрытых выездов.</li>
+            <li class="mb-1"><b>Источники заявок:</b> Показывает, какая реклама (Авито, Яндекс и др.) приносит самых богатых клиентов.</li>
+        </ul>
+    </div>
+
+    <div class="help-section">
+        <div class="d-flex align-items-center mb-3">
+            <div class="icon-box bg-orange-light"><i class="fa-solid fa-bullseye"></i></div>
+            <h5 class="fw-bold mb-0">Умные бизнес-цели</h5>
+        </div>
+        <p class="text-muted small lh-sm">Значок мишени <i class="fa-solid fa-bullseye"></i> открывает предиктивный дашборд (Юнит-экономику). Это ваш финансовый штурман.</p>
+        <p class="text-muted small lh-sm">Установите сумму и дедлайн. Система проанализирует историю ремонтов с вашего самого первого заказа, высчитает среднюю стоимость клиента (CPA) и вашу конверсию. Если вы отстаете от графика, CRM предложит 3 математически точных пути спасения:</p>
+        <ul class="text-muted small ps-3">
+            <li class="mb-1"><b>Масштаб:</b> Сколько точно рублей нужно долить в рекламу сегодня.</li>
+            <li class="mb-1"><b>Чек:</b> На сколько рублей нужно продать доп. услуг на следующем адресе.</li>
+            <li class="mb-1"><b>Конверсия:</b> На сколько дешевле должен обходиться клиент (нужно закрывать больше сделок из звонков).</li>
+        </ul>
+    </div>
+    </div>
+
+</body>
+</html>
